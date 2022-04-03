@@ -23,13 +23,19 @@ button {
 
 /* STYLE THE LIST ACCORDING TO THE DESIGN */
 ul {
-    
+    margin-top: 20px;
+    margin-left: 0;
+    padding: 0;
+       
 }
 
 li {
-    
+    margin-top: 5px;
 }
 
-a {
-
+li a {
+    color:#5f9341
 }
+/* The video did not show how the requirement has https:// and the results
+    does not have https:// shown
+/*

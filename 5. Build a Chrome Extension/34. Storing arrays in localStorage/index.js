@@ -1,6 +1,20 @@
-let myLeads = ["www.awesomelead.com"]
+// let myLeads = ["www.awesomelead.com"]
+let myLeads = '["www.awesomelead.com"]'
+
+myLeads = JSON.parse(myLeads)
+// console.log(myLeads)
+myLeads.push("www.magicleads.com")
+// console.log(myLeads)
+myLeads = JSON.stringify(myLeads)
+console.log(myLeads)
+console.log(typeof(myLeads))
+console.log(typeof myLeads) // same as above. this the Per's way to do in Video
 
 
+// 1. turn the myLeads string into an array
+// 2. Push a new value into the array
+// 3. Turn the array into a string again
+// 4. Consile.log the string using typeof to verify that it is a string
 
 const inputEl = document.getElementById("input-el")
 const inputBtn = document.getElementById("input-btn")
