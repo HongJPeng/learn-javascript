@@ -16,3 +16,9 @@ body {
     border-radius: 10px;
     height: 30px;
 }
+
+#other-shelf {
+    background: rgb(122, 255, 211);
+    border-radius: 10px;
+    height: 30px;
+}
