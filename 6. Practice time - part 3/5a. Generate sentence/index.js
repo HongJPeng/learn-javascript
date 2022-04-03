@@ -10,18 +10,24 @@
 // Use both a for loop and a template string to solve the challenge
 
 let largestCountries = ["China", "India", "USA"]
-let bestFruits = ["Apples","Bananas"]
+let bestFruits = ["Apples","Bananas","Kiwi","Orange"]
 
 function generateSentence(desc, arr) {
     let result = `The ${arr.length} ${desc} are `
-    for (let i = 0; i < (arr.length-1); i++ ) {
-        result += `${arr[i]}, `
+    const lastIndex = arr.length -1
+    for (let i = 0; i < (arr.length); i++ ) {
+        if (i === lastIndex) {
+            result += arr[i]
+        } else
+            result += `${arr[i]}, `
     }
-    result += arr[(arr.length-1)]
     
-    console.log(result)
+    return(result)
     
 }
 
-generateSentence("largest countries", largestCountries)
-generateSentence("best fruits", bestFruits)
+let sen1 = generateSentence("largest countries", largestCountries)
+console.log(sen1)
+
+let sen2 = generateSentence("best fruits", bestFruits)
+console.log(sen2)
